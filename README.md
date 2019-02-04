@@ -67,6 +67,19 @@ And bind them inside your **Java/Kotlin** code:
 ```java
 SlideToActView sta = (SlideToActView) findViewById(R.id.example);
 ```
+How to call `Complete listener`:
+
+    sta.setOnSlideCompleteListener(new SlideToActView.OnSlideCompleteListener() {
+        @Override
+        public void onSlideComplete(@NotNull SlideToActView slideToActView) {
+            
+        }
+    });
+
+To Reset Slider : 
+
+    sta.resetSlider();
+
 
 ## Features 🎨
 
